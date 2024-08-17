@@ -1,0 +1,22 @@
+10/26/2023, 10:54:46 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.Promotion 
+    ( 
+     PromoID            NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     PromoCode          VARCHAR2 (10) , 
+     StartDate          DATE , 
+     EndDate            DATE , 
+     DiscountPercentage NUMBER 
+    ) 
+    LOGGING"
+Table ADMIN.PROMOTION created.
+
+
+10/26/2023, 10:54:46 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.Promotion 
+    ADD CONSTRAINT Promotion_PK PRIMARY KEY ( PromoID ) 
+    USING INDEX LOGGING"
+Table ADMIN.PROMOTION altered.
+

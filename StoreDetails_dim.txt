@@ -1,0 +1,22 @@
+10/26/2023, 8:30:23 PM
+-------------------------------------------------------------------------------------------
+"CREATE TABLE ADMIN.Store_Details 
+    ( 
+     StoreID       NUMBER GENERATED ALWAYS AS IDENTITY 
+        ( START WITH 1 CACHE 20 ) , 
+     BranchName    VARCHAR2 (20) , 
+     StoreLocation VARCHAR2 (255) , 
+     StoreState    VARCHAR2 (20) , 
+     StoreCountry  VARCHAR2 (20) 
+    ) 
+    LOGGING"
+Table ADMIN.STORE_DETAILS created.
+
+
+10/26/2023, 8:30:23 PM
+-------------------------------------------------------------------------------------------
+"ALTER TABLE ADMIN.Store_Details 
+    ADD CONSTRAINT Store_Details_PK PRIMARY KEY ( StoreID ) 
+    USING INDEX LOGGING"
+Table ADMIN.STORE_DETAILS altered.
+
